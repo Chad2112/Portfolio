@@ -1,0 +1,39 @@
+@font-face {
+    font-family: AlexBrush;
+    src: url("../../font/AlexBrush-Regular.ttf");
+  }
+  * {
+    font-family: AlexBrush;
+  }
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+    background-image: url(../../img/pexels-felipe-ribeiro-2271683.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    // -webkit-backdrop-filter: blur(3px);
+    // backdrop-filter: blur(7px);
+    
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+

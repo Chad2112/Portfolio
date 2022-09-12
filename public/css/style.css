@@ -1,0 +1,191 @@
+@keyframes slid {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+    width: 100px;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+    width: 800px;
+  }
+}
+@keyframes margin {
+  0% {
+    opacity: 0;
+    transform: translateY(-1000px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@font-face {
+  font-family: AlexBrush;
+  src: url("../../font/AlexBrush-Regular.ttf");
+}
+* {
+  font-family: AlexBrush;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background-image: url(../../img/pexels-felipe-ribeiro-2271683.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.allcard {
+  width: 800px;
+  height: 700px;
+  margin: 0px;
+  overflow: hidden;
+  border-radius: 5% 5% 5% 5%;
+  animation: slid 2.5s ease-in-out 0s 1 normal forwards;
+}
+.allcard__card {
+  height: 100%;
+  width: 800px;
+  overflow: hidden;
+  background-color: rgba(128, 123, 123, 0.842);
+  -webkit-box-shadow: -3px -3px 25px 4px rgba(0, 0, 0, 0.63);
+  box-shadow: -3px -3px 25px 4px rgba(0, 0, 0, 0.63);
+  margin: 0%;
+  transition: all 1s ease-in-out;
+}
+.allcard__card__photo {
+  height: 100%;
+  width: 800px;
+  display: inline-block;
+  overflow: hidden;
+  background-color: rgba(128, 123, 123, 0.842);
+  -webkit-box-shadow: -3px -3px 25px 4px rgba(0, 0, 0, 0.63);
+  box-shadow: -3px -3px 25px 4px rgba(0, 0, 0, 0.63);
+  border-radius: 5%;
+  margin: 0%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#allcard__arrow__left {
+  height: 50px;
+  width: 50px;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  border: none;
+  font-size: 55px;
+  color: white;
+  position: absolute;
+  top: 47%;
+  right: 78%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+  transition: all 300ms ease;
+}
+#allcard__arrow__left:hover {
+  transform: scale(1.5);
+}
+
+#allcard__arrow__right {
+  height: 50px;
+  width: 50px;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  border: none;
+  font-size: 55px;
+  color: white;
+  position: absolute;
+  top: 47%;
+  right: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+  transition: all 300ms ease;
+}
+#allcard__arrow__right:hover {
+  transform: scale(1.5);
+}
+
+.fleche_left {
+  font-size: 55px;
+}
+
+.fleche_right {
+  font-size: 55px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0%;
+  height: 200px;
+  width: 100%;
+}
+
+footer {
+  height: 100%;
+  width: 100%;
+  background: rgb(79, 139, 227);
+  background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 35px;
+  padding-bottom: 1.5%;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
+}
+
+li {
+  list-style-type: none;
+}
+
+.header {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  background: rgb(79, 139, 227);
+  background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(57, 57, 57) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: margin 2.5s ease-in-out 0s 1 normal forwards;
+  font-size: 75px;
+}
+
+/*# sourceMappingURL=style.css.map */

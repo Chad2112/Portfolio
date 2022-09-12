@@ -1,0 +1,43 @@
+#allcard__arrow__left {
+    
+     @include attributButton;
+    position: absolute;
+    top: 47%;
+    right: 78%;
+    @include flex-center;
+    transform: scale(1);
+    transition: all 300ms ease;
+
+    &:hover {
+        transform: scale(1.5);
+    
+       }
+       
+     
+}
+
+#allcard__arrow__right {
+    @include attributButton;
+   position: absolute;
+   top: 47%;
+   right: 20%;
+   @include flex-center;
+   transform: scale(1);
+   transition: all 300ms ease;
+
+   &:hover {
+    transform: scale(1.5);
+
+   }
+   
+
+   
+}
+.fleche_left{
+    
+    font-size: 55px;
+} .fleche_right {
+   font-size: 55px;
+}
+    
+
